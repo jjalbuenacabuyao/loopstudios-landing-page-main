@@ -1,0 +1,29 @@
+@use '../utils/variables' as *;
+
+.hero {
+  background-image: url('../images/mobile/image-hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding-inline: 1.5rem;
+
+
+    h1 {
+      font-family: $josefin;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: normal;
+      padding: 1.5rem;
+      border: 1px solid $white;
+    }
+  }
+}
