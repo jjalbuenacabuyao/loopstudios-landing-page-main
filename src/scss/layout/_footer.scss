@@ -1,0 +1,29 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.footer {
+  background-color: $black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 3rem;
+  gap: 1.5rem;
+
+  &__links {
+    @include flex(column);
+    gap: 1rem;
+    padding-block: 1.5rem;
+    font-family: $alata;
+  }
+
+  &__socials {
+    @include flex(row, center);
+    gap: 1rem;
+  }
+
+  &__copyright {
+    font-family: $alata;
+    color: $dark-gray;
+  }
+}
