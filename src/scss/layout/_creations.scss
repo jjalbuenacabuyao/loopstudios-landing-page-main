@@ -1,0 +1,17 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.creations {
+  color: $black;
+  display: grid;
+  padding-inline: 1.5rem;
+  gap: 1.5rem;
+  padding-block-end: 5rem;
+
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding-block-end: 1.5rem;
+  }
+}

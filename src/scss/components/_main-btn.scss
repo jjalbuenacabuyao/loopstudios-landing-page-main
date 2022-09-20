@@ -1,0 +1,13 @@
+@use '../utils/variables' as *;
+
+.main__btn {
+  grid-row: 10;
+  width: 40%;
+  justify-self: center;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-family: $alata;
+  color: $black;
+  letter-spacing: 0.25rem;
+  border: 1px solid $black;
+}

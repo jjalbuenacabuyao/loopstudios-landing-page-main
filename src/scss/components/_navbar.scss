@@ -12,6 +12,7 @@
   }
 
   &__nav {
+    z-index: 5;
     @include flex;
     position: fixed;
     inset: 0;
