@@ -6,6 +6,10 @@
   position: relative;
   padding: 2.5rem 1.5rem;
 
+  @media screen and (min-width: 48em) {
+    padding: 5rem 3rem;
+  }
+
   &__logo,
   &__toggler {
     z-index: 99;
