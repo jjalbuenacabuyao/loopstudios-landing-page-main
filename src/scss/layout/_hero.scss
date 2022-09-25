@@ -6,8 +6,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+
+  &__title,
+  .navbar {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+  }
 
   &__title {
     flex: 1;
@@ -24,7 +31,7 @@
       font-weight: 300;
       line-height: normal;
       padding: 1.5rem;
-      border: 1px solid $white;
+      border: 2px solid $white;
     }
   }
 }

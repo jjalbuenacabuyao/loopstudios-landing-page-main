@@ -9,6 +9,11 @@
   font-family: $alata;
   color: $black;
   letter-spacing: 0.25rem;
-  border: 1px solid $black;
+  border: 1px solid $very-dark-gray;
   background-color: $white;
+
+  @media screen and (min-width: 43.75em) {
+    grid-row: 6;
+    grid-column: span 2;
+  }
 }

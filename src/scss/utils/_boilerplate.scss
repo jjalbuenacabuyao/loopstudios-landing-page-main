@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-size: $base;
+  font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
   font-family: $josefin;
   overflow-x: hidden;
   color: $white;
