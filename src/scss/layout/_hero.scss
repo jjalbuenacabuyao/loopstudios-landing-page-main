@@ -6,8 +6,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
   display: grid;
 
   &__title,
@@ -24,7 +22,7 @@
 
 
     h1 {
-      max-width: 327px;
+      max-width: 20.4375rem;
       font-family: $josefin;
       text-transform: uppercase;
       font-size: 2.5rem;
@@ -32,6 +30,11 @@
       line-height: normal;
       padding: 1.5rem;
       border: 2px solid $white;
+
+      @media screen and (min-width: 43.75em) {
+        max-width: 24.375rem;
+        font-size: 3rem;
+      }
     }
   }
 }
