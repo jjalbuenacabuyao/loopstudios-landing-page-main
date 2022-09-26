@@ -26,12 +26,24 @@
     background-color: black;
     transform: translateY(-100%);
     transition: transform 400ms ease-in-out;
+
+    @media screen and (min-width: 64em) {
+      position: initial;
+      transform: none;
+      min-height: fit-content;
+      background-color: transparent;
+      padding: 0;
+    }
   }
 
   &__nav {
     ul {
       @include flex(column, center, flex-start);
       gap: 1.5rem;
+
+      @media screen and (min-width: 64em){
+        @include flex;
+      }
     }
 
     a {
