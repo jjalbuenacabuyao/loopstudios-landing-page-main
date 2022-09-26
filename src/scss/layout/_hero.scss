@@ -8,6 +8,11 @@
   min-height: 100vh;
   display: grid;
 
+  @media screen and (min-width: 64em){
+    min-height: fit-content;
+    background-image: url('../images/desktop/image-hero.jpg');
+  }
+
   &__title,
   .navbar {
     grid-row: 1 / -1;
@@ -19,6 +24,13 @@
     display: grid;
     place-items: center;
     padding-inline: 1.5rem;
+
+    @media screen and (min-width: 64em){
+      grid-row: 2;
+      justify-self: start;
+      margin-block-end: 5rem;
+      padding-inline: 4rem;
+    }
 
 
     h1 {

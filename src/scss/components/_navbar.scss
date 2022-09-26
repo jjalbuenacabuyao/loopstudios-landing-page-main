@@ -11,6 +11,10 @@
     padding: 5rem 3rem;
   }
 
+  @media screen and (min-width: 64em){
+    padding-inline: 4rem;
+  }
+
   &__logo,
   &__toggler {
     z-index: 99;
