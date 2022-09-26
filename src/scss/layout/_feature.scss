@@ -6,21 +6,48 @@
 
   @media screen and (min-width: 43.75em) {
     padding: 10em 3rem;
+    display: grid;
+
+    &__illustration,
+    &__description {
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
+    }
+
+    &__description {
+      z-index: 3;
+      justify-self: flex-end;
+      background-color: $white;
+      height: fit-content;
+      width: 60%;
+      margin-block-start: 9rem;
+    }
+
+    &__illustration {
+      width: 65%;
+    }
+
+    h1 {
+      max-width: 15ch;
+      margin: auto;
+    }
   }
 
   &__description {
     color: $black;
     text-align: center;
-    padding-inline: 2rem;
+    padding: 2rem;
   }
 
   h1 {
-    padding: 1.5rem 0 1rem;
+    padding-block-end: 1rem;
     font-size: 1.8rem;
     text-transform: uppercase;
   }
 
   p {
     color: $very-dark-gray;
+    max-width: 40ch;
+    margin: auto;
   }
 }
