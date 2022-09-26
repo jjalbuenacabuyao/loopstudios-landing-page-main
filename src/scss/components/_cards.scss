@@ -18,4 +18,16 @@
     line-height: normal;
     font-size: 1.5rem;
   }
+
+  &__image__sm {
+    @media screen and (min-width: 64em) {
+      display: none;
+    }
+  }
+
+  &__image__lg{
+    @media screen and (max-width: 63.9375em) {
+      display: none;
+    }
+  }
 }

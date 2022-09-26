@@ -16,4 +16,10 @@
     grid-row: 6;
     grid-column: span 2;
   }
+
+  @media screen and (min-width: 64em) {
+    grid-row: 5;
+    grid-column: span 4;
+    width: 30%;
+  }
 }
