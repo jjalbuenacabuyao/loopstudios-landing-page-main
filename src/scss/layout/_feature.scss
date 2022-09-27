@@ -54,4 +54,15 @@
   @media screen and (min-width: 64em){
     padding-inline: 4rem;
   }
+
+  @media screen and (min-width: 90em) {
+    padding-inline: 8rem;
+    &__description {
+      width: 50%;
+      margin-block-start: 12rem;
+    }
+    &__illustration {
+      width: 75%;
+    }
+  }
 }
