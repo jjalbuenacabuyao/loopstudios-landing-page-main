@@ -53,21 +53,22 @@
     <main>
       <!-- Hero Section -->
       <section class="grid grid-cols-1 grid-rows-1 place-items-center">
-        <picture class="row-start-1 col-start-1 z-[5] relative before:block before:absolute before:inset-0 before:bg-black/50 before:z-6">
+        <picture class="row-start-1 col-start-1 z-[5] relative before:block before:absolute before:inset-0 before:bg-black/50 before:z-6 w-full">
           <source
             media="(min-width: 768px)"
             srcset="./src/images/desktop/image-hero.jpg"
           />
           <img
             src="./src/images/mobile/image-hero.jpg"
-            alt="A person using VR"
+            alt="A person using VR" 
+            class="w-full object-cover md:h-[50dvh] lg:h-auto"
           />
         </picture>
 
         <h1
           class="row-start-1 col-start-1 p-6 text-4xl mx-6 border-2 border-white z-10"
         >
-          Immersive experiences that <span><br /></span> deliver
+          Immersive<br/>experiences<br/>that<span class="md:hidden"><br /></span> deliver
         </h1>
       </section>
 
