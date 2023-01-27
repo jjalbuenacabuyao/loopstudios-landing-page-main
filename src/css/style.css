@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.creation > div {
+  @apply grid grid-cols-1 grid-rows-1 items-end;
+}
+
+.creation > div > * {
+  @apply col-start-1 row-start-1;
+}
+
+.creation h3 {
+  @apply text-xl pl-5 pb-5 leading-none z-10;
+}
+
+.creation picture {
+  @apply relative before:block before:absolute before:inset-0 before:w-full before:h-full before:bg-black/[0.5] z-[5];
+}
+
