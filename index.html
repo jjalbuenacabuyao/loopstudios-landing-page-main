@@ -25,7 +25,7 @@
     <title>Loopstudios | Landing Page</title>
   </head>
   <body class="uppercase text-white text-15px font-josefin">
-    <header class="absolute top-0 right-0 px-6 pt-8 w-full">
+    <header class="absolute top-0 right-0 px-6 pt-8 w-full z-10">
       <nav class="flex justify-between">
         <a href="#">
           <img src="./src/images/logo.svg" alt="Loppstudios logo" class="w-36"/>
@@ -53,7 +53,7 @@
     <main>
       <!-- Hero Section -->
       <section class="grid grid-cols-1 grid-rows-1 place-items-center">
-        <picture class="row-start-1 col-start-1">
+        <picture class="row-start-1 col-start-1 z-[5] relative before:block before:absolute before:inset-0 before:bg-black/50 before:z-6">
           <source
             media="(min-width: 1024px)"
             srcset="./src/images/desktop/image-hero.jpg"
@@ -65,7 +65,7 @@
         </picture>
 
         <h1
-          class="row-start-1 col-start-1 p-6 text-4xl mx-6 border-[1px] border-white"
+          class="row-start-1 col-start-1 p-6 text-4xl mx-6 border-2 border-white z-10"
         >
           Immersive experiences that <span><br /></span> deliver
         </h1>
