@@ -15,6 +15,10 @@
 }
 
 .creation picture {
-  @apply relative before:block before:absolute before:inset-0 before:w-full before:h-full before:bg-black/[0.5] z-[5];
+  @apply relative before:block before:absolute before:inset-0 before:w-full before:h-full before:bg-black/[0.5] z-[5] w-full;
+}
+
+.creation img {
+  @apply w-full;
 }
 
