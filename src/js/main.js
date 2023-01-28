@@ -1,13 +1,20 @@
-const navbarToggler = document.querySelector("[data-nav-toggler]");
+const navToggler = document.querySelector("[data-navToggler]");
 const navigation = document.querySelector("[data-navigation]");
+const menuIcon = document.querySelector("[data-menuIcon]");
+const closeIcon = document.querySelector("[data-closeIcon]");
 
-navbarToggler.addEventListener('click', () => {
-  const visibility = navigation.getAttribute('data-visible');
-  if (visibility === 'false') {
-    navigation.setAttribute('data-visible', true);
-    navbarToggler.setAttribute('aria-expanded', true);
+navToggler.addEventListener("click", () => {
+  console.log("clicked");
+  const isVisible = navigation.getAttribute("data-visible") === "true"
+  menuIcon.classList.toggle("hidden")
+  if (!isVisible){
+    closeIcon.classList.replace("hidden", "block")
+    navigation.classList.replace("scale-0", "scale-1")
+    navigation.setAttribute("data-visible", "true")
   } else {
-    navigation.setAttribute('data-visible', false);
-    navbarToggler.setAttribute('aria-expanded', false);
+    closeIcon.classList.replace("block", "hidden")
+    navigation.classList.replace("scale-1", "scale-0")
+    navigation.setAttribute("data-visible", "flase")
   }
+  
 })
