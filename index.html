@@ -25,13 +25,13 @@
     <title>Loopstudios | Landing Page</title>
   </head>
   <body class="uppercase text-white text-15px font-josefin">
-    <header class="absolute top-0 right-0 px-6 pt-8 w-full md:px-12">
-      <nav class="flex justify-between">
+    <header class="absolute top-0 right-0 px-24-48 pt-8 w-full">
+      <nav class="flex justify-between items-center">
         <a href="#" class="z-[200]">
           <img src="./src/images/logo.svg" alt="Loppstudios logo" class="w-36"/>
         </a>
 
-        <button data-navToggler class="z-[200] transition-all">
+        <button data-navToggler class="z-[200] transition-all md:hidden">
           <img data-menuIcon src="./src/images/icon-hamburger.svg" alt="Menu icon" />
           <img
             data-closeIcon
@@ -41,7 +41,7 @@
           />
         </button>
 
-        <ul data-navigation data-visible="false" class="fixed inset-0 transition-all origin-[90%_40px] scale-0 bg-black z-[100]">
+        <ul data-navigation data-visible="false" class="fixed inset-0 transition-all origin-[90%_40px] scale-0 bg-black z-[100] flex flex-col justify-center px-24-48 gap-6 text-2xl md:static md:transform-none md:bg-transparent md:flex-row md:text-base md:normal-case md:px-0">
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Events</a></li>
@@ -67,20 +67,20 @@
         </picture>
 
         <h1
-          class="row-start-1 col-start-1 p-6 text-4xl mx-6 border-2 border-white z-10 md:ml-12"
+          class="row-start-1 col-start-1 p-6 text-4xl mx-24-48 border-2 border-white z-10 md:ml-12"
         >
           Immersive<br/>experiences<br/>that<span class="md:hidden"><br /></span> deliver
         </h1>
       </section>
 
       <!-- Feature -->
-      <section class="py-20 px-6 md:px-12 text-center grid gap-10 md:grid-cols-2 md:text-left md:items-center">
-        <img src="./src/images/mobile/image-interactive.jpg" alt="" />
+      <section class="py-20 px-24-48 text-center grid gap-10 md:grid-cols-2 md:text-left md:items-center">
+        <img src="./src/images/mobile/image-interactive.jpg" alt="" class="w-full"/>
         <div class="grid gap-5 md:flex md:flex-col">
           <h2 class="text-black font-bold text-2xl">
             The leader in interactive VR
           </h2>
-          <p class="text-dark-gray-100 font-alata normal-case px-3 md:px-0">
+          <p class="text-dark-gray-100 font-alata normal-case px-12-20 md:px-0">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -90,7 +90,7 @@
       </section>
 
       <!-- Creations -->
-      <section class="creation grid gap-6 px-6 pb-20 md:px-12 md:grid-cols-4 md:items-center">
+      <section class="creation grid gap-6 px-24-48 pb-20 md:grid-cols-4 md:items-center">
         <h2 class="text-2xl text-black font-bold text-center md:col-span-2 md:text-left md:mb-4">Our creations</h2>
 
         <!-- Deep Earth -->
@@ -198,7 +198,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black px-6 py-12 text-center grid gap-10 font-alata normal-case">
+    <footer class="bg-black px-24-48 py-12 text-center grid gap-10 font-alata normal-case">
       <div class="grid gap-10 justify-center">
         <img src="./src/images/logo.svg" alt="Loopstudios Logo" class="w-36"/>
         <ul class="grid gap-5">
