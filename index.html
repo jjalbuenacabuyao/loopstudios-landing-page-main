@@ -25,22 +25,23 @@
     <title>Loopstudios | Landing Page</title>
   </head>
   <body class="uppercase text-white text-15px font-josefin">
-    <header class="absolute top-0 right-0 px-6 pt-8 w-full z-10 md:px-12">
+    <header class="absolute top-0 right-0 px-6 pt-8 w-full md:px-12">
       <nav class="flex justify-between">
-        <a href="#">
+        <a href="#" class="z-[200]">
           <img src="./src/images/logo.svg" alt="Loppstudios logo" class="w-36"/>
         </a>
 
-        <button>
-          <img src="./src/images/icon-hamburger.svg" alt="Menu icon" />
+        <button data-navToggler class="z-[200] transition-all">
+          <img data-menuIcon src="./src/images/icon-hamburger.svg" alt="Menu icon" />
           <img
+            data-closeIcon
             src="./src/images/icon-close.svg"
             alt="Close menu"
             class="hidden"
           />
         </button>
 
-        <ul class="fixed inset-0 -translate-x-full">
+        <ul data-navigation data-visible="false" class="fixed inset-0 transition-all origin-[90%_40px] scale-0 bg-black z-[100]">
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Events</a></li>
