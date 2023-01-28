@@ -24,15 +24,23 @@
 
     <title>Loopstudios | Landing Page</title>
   </head>
-  <body class="uppercase text-white text-15px font-josefin">
-    <header class="absolute top-0 right-0 px-24-48 pt-8 w-full">
+  <body class="uppercase text-white text-15px font-josefin max-w-screen-2xl m-auto">
+    <header class="absolute top-0 right-0 px-24-48 pt-8 w-full md:px-48-164 max-w-screen-2xl m-auto left-0">
       <nav class="flex justify-between items-center">
         <a href="#" class="z-[200]">
-          <img src="./src/images/logo.svg" alt="Loppstudios logo" class="w-36"/>
+          <img
+            src="./src/images/logo.svg"
+            alt="Loppstudios logo"
+            class="w-36"
+          />
         </a>
 
         <button data-navToggler class="z-[200] transition-all md:hidden">
-          <img data-menuIcon src="./src/images/icon-hamburger.svg" alt="Menu icon" />
+          <img
+            data-menuIcon
+            src="./src/images/icon-hamburger.svg"
+            alt="Menu icon"
+          />
           <img
             data-closeIcon
             src="./src/images/icon-close.svg"
@@ -41,7 +49,11 @@
           />
         </button>
 
-        <ul data-navigation data-visible="false" class="fixed inset-0 transition-all origin-[90%_40px] scale-0 bg-black z-[100] flex flex-col justify-center px-24-48 gap-6 text-2xl md:static md:transform-none md:bg-transparent md:flex-row md:text-base md:normal-case md:px-0">
+        <ul
+          data-navigation
+          data-visible="false"
+          class="fixed inset-0 transition-all origin-[90%_40px] scale-0 bg-black z-[100] flex flex-col justify-center px-24-48 gap-6 text-2xl md:static md:transform-none md:bg-transparent md:flex-row md:text-base md:normal-case md:px-0"
+        >
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Events</a></li>
@@ -53,30 +65,44 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="grid grid-cols-1 grid-rows-1 place-items-center md:justify-items-start">
-        <picture class="row-start-1 col-start-1 z-[5] relative before:block before:absolute before:inset-0 before:bg-black/50 before:z-6 w-full">
+      <section
+        class="grid grid-cols-1 grid-rows-1 place-items-center md:justify-items-start"
+      >
+        <picture
+          class="row-start-1 col-start-1 z-[5] relative before:block before:absolute before:inset-0 before:bg-black/50 before:z-6 w-full"
+        >
           <source
             media="(min-width: 768px)"
             srcset="./src/images/desktop/image-hero.jpg"
           />
           <img
             src="./src/images/mobile/image-hero.jpg"
-            alt="A person using VR" 
+            alt="A person using VR"
             class="w-full object-cover landscape:h-full md:h-[50dvh] lg:h-auto"
           />
         </picture>
 
         <h1
-          class="row-start-1 col-start-1 p-6 text-4xl mx-24-48 border-2 border-white z-10 md:ml-12"
+          class="row-start-1 col-start-1 p-6 text-4xl mx-24-48 border-2 border-white z-10 md:ml-48-164"
         >
-          Immersive<br/>experiences<br/>that<span class="md:hidden"><br /></span> deliver
+          Immersive<br />experiences<br />that<span class="md:hidden"
+            ><br
+          /></span>
+          deliver
         </h1>
       </section>
 
       <!-- Feature -->
-      <section class="py-20 px-24-48 text-center grid gap-10 md:grid-cols-2 md:text-left md:items-center">
-        <img src="./src/images/mobile/image-interactive.jpg" alt="" class="w-full"/>
-        <div class="grid gap-5 md:flex md:flex-col">
+      <section
+        class="py-20 px-24-48 text-center grid gap-10 md:grid-cols-2 md:text-left md:items-center md:px-48-164 md:pt-80-160 md:pb-0 md:mb-80-95 relative 2xl:block 2xl:pb-24"
+      >
+        <img
+          src="./src/images/mobile/image-interactive.jpg"
+          alt=""
+          class="w-full 2xl:w-[60%]"
+        />
+
+        <div class="grid gap-5 md:flex md:flex-col 2xl:absolute 2xl:bottom-0 2xl:right-0 2xl:w-[545px] 2xl:mr-48-164 2xl:bg-white 2xl:py-24 2xl:pl-24">
           <h2 class="text-black font-bold text-2xl">
             The leader in interactive VR
           </h2>
@@ -90,8 +116,14 @@
       </section>
 
       <!-- Creations -->
-      <section class="creation grid gap-6 px-24-48 pb-20 md:grid-cols-4 md:items-center">
-        <h2 class="text-2xl text-black font-bold text-center md:col-span-2 md:text-left md:mb-4">Our creations</h2>
+      <section
+        class="creation grid gap-6 px-24-48 pb-20 md:grid-cols-4 md:items-center md:px-48-164 md:pb-80-184"
+      >
+        <h2
+          class="text-2xl text-black font-bold text-center md:col-span-2 md:text-left md:mb-4"
+        >
+          Our creations
+        </h2>
 
         <!-- Deep Earth -->
         <div>
@@ -105,7 +137,7 @@
               alt="Image of Earth from outer space"
             />
           </picture>
-          <h3>Deep <br/>Earth</h3>
+          <h3>Deep <br />Earth</h3>
         </div>
 
         <!-- Night Arcade -->
@@ -117,7 +149,7 @@
             />
             <img src="./src/images/mobile/image-night-arcade.jpg" alt="" />
           </picture>
-          <h3>Night <br/>Arcade</h3>
+          <h3>Night <br />Arcade</h3>
         </div>
 
         <!-- Soccer Team VR -->
@@ -129,7 +161,7 @@
             />
             <img src="./src/images/mobile/image-soccer-team.jpg" alt="" />
           </picture>
-          <h3>Soccer <br/>Team VR</h3>
+          <h3>Soccer <br />Team VR</h3>
         </div>
 
         <!-- The Grid -->
@@ -141,7 +173,7 @@
             />
             <img src="./src/images/mobile/image-grid.jpg" alt="" />
           </picture>
-          <h3>The <br/>Grid</h3>
+          <h3>The <br />Grid</h3>
         </div>
 
         <!-- From up above VR -->
@@ -153,7 +185,7 @@
             />
             <img src="./src/images/mobile/image-from-above.jpg" alt="" />
           </picture>
-          <h3>From Up <br/>Above VR</h3>
+          <h3>From Up <br />Above VR</h3>
         </div>
 
         <!-- Pocket Borealis -->
@@ -165,7 +197,7 @@
             />
             <img src="./src/images/mobile/image-pocket-borealis.jpg" alt="" />
           </picture>
-          <h3>Pocket <br/>Borealis</h3>
+          <h3>Pocket <br />Borealis</h3>
         </div>
 
         <!-- The Curiosity -->
@@ -177,7 +209,7 @@
             />
             <img src="./src/images/mobile/image-curiosity.jpg" alt="" />
           </picture>
-          <h3>The <br/>Curiosity</h3>
+          <h3>The <br />Curiosity</h3>
         </div>
 
         <!-- Make it Fisheye -->
@@ -189,18 +221,24 @@
             />
             <img src="./src/images/mobile/image-fisheye.jpg" alt="" />
           </picture>
-          <h3>Make it <br/>Fisheye</h3>
+          <h3>Make it <br />Fisheye</h3>
         </div>
 
         <!-- Button -->
-        <button class="text-black uppercase border-[1px] border-black leading-none justify-self-center py-3 px-10 font-bold tracking-widest md:row-start-1 md:col-start-3 md:col-span-2 md:justify-self-end md:mb-4">See all</button>
+        <button
+          class="text-black uppercase border-[1px] border-black leading-none justify-self-center py-3 px-10 font-bold tracking-widest md:row-start-1 md:col-start-3 md:col-span-2 md:justify-self-end md:mb-4"
+        >
+          See all
+        </button>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black px-24-48 py-12 text-center grid gap-10 font-alata normal-case">
+    <footer
+      class="bg-black px-24-48 py-12 text-center grid gap-10 font-alata normal-case md:px-48-164"
+    >
       <div class="grid gap-10 justify-center">
-        <img src="./src/images/logo.svg" alt="Loopstudios Logo" class="w-36"/>
+        <img src="./src/images/logo.svg" alt="Loopstudios Logo" class="w-36" />
         <ul class="grid gap-5">
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
@@ -233,7 +271,9 @@
             /></a>
           </li>
         </ul>
-        <p class="text-sm text-dark-gray-200">&copy; 2021 Loopstudios. All rights reserved.</p>
+        <p class="text-sm text-dark-gray-200">
+          &copy; 2021 Loopstudios. All rights reserved.
+        </p>
       </div>
     </footer>
   </body>
