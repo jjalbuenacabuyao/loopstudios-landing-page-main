@@ -14,6 +14,8 @@ module.exports = {
       fontSize: {
         "15px": "0.9375rem",
         "20-30": "clamp(1.25rem, 1.05rem + 0.87vw, 1.875rem)",
+        "36-54": "clamp(2.25rem, 1.89rem + 1.55vw, 3.375rem)",
+        "24-36": "clamp(1.5rem, 1.26rem + 1.034vw, 2.25rem)",
       },
       padding: {
         "24-48": "clamp(1.5rem, 0.069rem + 6.11vw, 3rem)",
