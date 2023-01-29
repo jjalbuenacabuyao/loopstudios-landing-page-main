@@ -11,7 +11,7 @@
 }
 
 .creation h3 {
-  @apply text-xl pl-5 pb-5 leading-none z-10;
+  @apply text-20-30 pl-24-44 pb-24-44 leading-none z-10;
 }
 
 .creation picture {
