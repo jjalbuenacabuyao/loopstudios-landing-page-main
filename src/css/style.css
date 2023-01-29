@@ -22,3 +22,17 @@
   @apply w-full;
 }
 
+.nav-links,
+.footer-links {
+  @apply relative after:hidden after:absolute after:-bottom-3 after:right-0 after:left-0 after:mx-auto after:h-[2px] after:w-0 after:bg-white hover:after:w-1/2 hover:after:block after:animate-[span-width_500ms];
+}
+
+@keyframes span-width {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 50%;
+  }
+}
+
