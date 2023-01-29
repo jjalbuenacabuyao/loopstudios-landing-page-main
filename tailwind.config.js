@@ -13,9 +13,11 @@ module.exports = {
       },
       fontSize: {
         "15px": "0.9375rem",
+        "20-30": "clamp(1.25rem, 1.05rem + 0.87vw, 1.875rem)",
       },
       padding: {
         "24-48": "clamp(1.5rem, 0.069rem + 6.11vw, 3rem)",
+        "24-44": "clamp(1.5rem, 1.06rem + 1.88vw, 2.75rem)",
         "12-20": "clamp(0.75rem, -0.20rem + 4.07vw, 1.75rem)",
         "48-164": "clamp(3rem, -5.29rem + 17.26vw, 10.25rem)",
         "80-160": "clamp(5rem, -0.71rem + 11.9vw, 10rem)",
