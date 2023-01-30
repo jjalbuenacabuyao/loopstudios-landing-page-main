@@ -11,11 +11,11 @@
 }
 
 .creation h3 {
-  @apply text-20-30 pl-24-44 pb-24-44 leading-none z-10;
+  @apply z-10 pl-24-44 pb-24-44 text-20-30 leading-none;
 }
 
 .creation picture {
-  @apply relative before:block before:absolute before:inset-0 before:w-full before:h-full before:bg-black/[0.5] z-[5] w-full;
+  @apply relative z-[5] w-full before:absolute before:inset-0 before:block before:h-full before:w-full before:bg-black/[0.5];
 }
 
 .creation img {
@@ -24,7 +24,7 @@
 
 .nav-links,
 .footer-links {
-  @apply relative after:hidden after:absolute after:-bottom-3 after:right-0 after:left-0 after:mx-auto after:h-[2px] after:w-0 after:bg-white hover:after:w-1/2 hover:after:block after:animate-[span-width_500ms];
+  @apply relative after:absolute after:-bottom-3 after:right-0 after:left-0 after:mx-auto after:hidden after:h-[2px] after:w-0 after:animate-[span-width_500ms] after:bg-white hover:after:block hover:after:w-1/2;
 }
 
 @keyframes span-width {
@@ -35,4 +35,3 @@
     width: 50%;
   }
 }
-
